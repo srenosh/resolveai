@@ -1,4 +1,9 @@
 export default function Contact() {
+  // Email split to prevent simple bot scraping
+  const user = "sunnyrenosh";
+  const domain = "gmail.com";
+  const email = `${user}@${domain}`;
+
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 24px' }}>
       <div style={{ textAlign: 'center', maxWidth: '640px', width: '100%' }}>
@@ -8,7 +13,7 @@ export default function Contact() {
           Open to senior automation roles, AI integration projects, and federal consulting opportunities.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
-          <a href="mailto:sunnyrenosh@gmail.com" style={{
+          <a href={`mailto:${email}`} style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             padding: '18px 48px', backgroundColor: '#2563eb',
             borderRadius: '100px', fontSize: '16px', fontWeight: 500,
@@ -16,16 +21,20 @@ export default function Contact() {
             boxShadow: '0 0 60px rgba(37,99,235,0.3)',
             letterSpacing: '-0.2px',
           }}>
-            sunnyrenosh@gmail.com
+            {email}
           </a>
-          <a href="https://linkedin.com/in/renosh-sunny-a69048222" target="_blank" rel="noopener noreferrer" style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            padding: '18px 48px',
-            border: '1px solid rgba(255,255,255,0.15)',
-            borderRadius: '100px', fontSize: '16px', fontWeight: 400,
-            color: 'rgba(255,255,255,0.6)', textDecoration: 'none', width: '100%', maxWidth: '380px',
-            letterSpacing: '-0.2px',
-          }}>
+          <a
+            href="https://linkedin.com/in/renosh-sunny-a69048222"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              padding: '18px 48px',
+              border: '1px solid rgba(255,255,255,0.15)',
+              borderRadius: '100px', fontSize: '16px', fontWeight: 400,
+              color: 'rgba(255,255,255,0.6)', textDecoration: 'none', width: '100%', maxWidth: '380px',
+              letterSpacing: '-0.2px',
+            }}>
             LinkedIn: Renosh Sunny
           </a>
         </div>
