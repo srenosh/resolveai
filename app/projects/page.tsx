@@ -26,7 +26,7 @@ export default function Projects() {
             Architected and delivered an end-to-end intelligent document processing pipeline for U.S. Navy FITREP evaluation packages — automating intake, classification, extraction, validation, and structured routing of 400,000+ documents annually with zero document loss tolerance.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '40px', padding: '32px 0', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+          <div className="stats-grid" style={{ gap: '16px', marginBottom: '40px', padding: '32px 0', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
             {[
               { value: "400K+", label: "Docs / Year" },
               { value: "98%", label: "Job Completion" },

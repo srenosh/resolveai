@@ -28,7 +28,7 @@ export default function Home() {
           Federal AI Automation
         </div>
         <h1 style={{
-          fontSize: 'clamp(48px, 8vw, 88px)',
+          fontSize: 'clamp(40px, 8vw, 88px)',
           fontWeight: 600, letterSpacing: '-2px',
           lineHeight: 1.05, maxWidth: '900px', marginBottom: '28px',
         }}>
@@ -41,12 +41,13 @@ export default function Home() {
           </span>
         </h1>
         <p style={{
-          fontSize: '18px', color: 'rgba(255,255,255,0.35)',
+          fontSize: 'clamp(15px, 2vw, 18px)', color: 'rgba(255,255,255,0.35)',
           maxWidth: '480px', marginBottom: '48px', lineHeight: 1.7, fontWeight: 300,
+          padding: '0 8px',
         }}>
           Intelligent document processing and RPA solutions built for mission-critical federal environments.
         </p>
-        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', padding: '0 16px' }}>
           <a href="/projects" style={{
             padding: '14px 32px', backgroundColor: '#2563eb',
             borderRadius: '100px', fontSize: '14px', fontWeight: 500,
@@ -67,16 +68,15 @@ export default function Home() {
 
       {/* Stats */}
       <section style={{ borderTop: '1px solid rgba(255,255,255,0.05)', padding: '80px 24px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div className="stats-grid" style={{ maxWidth: '1000px', margin: '0 auto' }}>
           {[
             { value: "400K+", label: "Documents Processed Annually" },
             { value: "98%", label: "Job Completion Rate" },
             { value: "75%", label: "Reduction in Manual Effort" },
             { value: "94%", label: "Extraction Confidence" },
           ].map((stat, i) => (
-            <div key={stat.label} style={{
+            <div key={stat.label} className={i < 3 ? 'stats-grid-item-border' : ''} style={{
               textAlign: 'center', padding: '32px 16px',
-              borderRight: i < 3 ? '1px solid rgba(255,255,255,0.05)' : 'none',
             }}>
               <div style={{ fontSize: 'clamp(36px, 4vw, 52px)', fontWeight: 600, color: '#60a5fa', marginBottom: '10px', letterSpacing: '-1px' }}>{stat.value}</div>
               <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)', lineHeight: 1.5 }}>{stat.label}</div>
@@ -106,7 +106,7 @@ export default function Home() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '16px' }}>Expertise</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 600, letterSpacing: '-0.5px', marginBottom: '56px' }}>Core Capabilities</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
             {[
               { title: "Intelligent Document Processing", desc: "ML Extractor, Regex, Document Understanding, Form Extractor, and Taxonomy design for complex federal document workflows." },
               { title: "RPA Architecture", desc: "Dispatcher–Performer REFramework, Orchestrator queue management, Action Center human-in-the-loop validation and exception handling." },
@@ -147,8 +147,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer style={{ borderTop: '1px solid rgba(255,255,255,0.05)', padding: '32px 48px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <footer style={{ borderTop: '1px solid rgba(255,255,255,0.05)', padding: '32px 24px' }}>
+        <div className="footer-inner">
           <span style={{ fontSize: '13px', color: 'rgba(255,255,255,0.15)' }}>© 2025 ResolveAI</span>
           <div style={{ display: 'flex', gap: '32px' }}>
             {[['Projects', '/projects'], ['About', '/about'], ['Contact', '/contact']].map(([label, href]) => (

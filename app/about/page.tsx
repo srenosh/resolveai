@@ -11,7 +11,7 @@ export default function About() {
             "My work focuses on building systems that don't just automate tasks — they classify, validate, extract, and route data with enterprise-grade reliability. My flagship project processes 400,000+ military evaluation documents annually for the U.S. Navy, achieving a 98% job completion rate.",
             "I'm not just keeping pace with AI — I'm building the infrastructure it runs on. Every system I design includes an AI evolution path: human-in-the-loop feedback loops, structured logs for ML retraining, and foundations for AI-assisted decision routing.",
           ].map((text, i) => (
-            <p key={i} style={{ color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, fontSize: '18px', fontWeight: 300 }}>{text}</p>
+            <p key={i} style={{ color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: 300 }}>{text}</p>
           ))}
         </div>
 
@@ -24,9 +24,9 @@ export default function About() {
               { title: "SAP Certified: TS410 Business Integration with SAP S/4HANA", year: "2024" },
               { title: "BS Information Technology — Western Governors University", year: "Expected 2026" },
             ].map(cert => (
-              <div key={cert.title} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+              <div key={cert.title} className="cert-row">
                 <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '15px' }}>{cert.title}</span>
-                <span style={{ color: 'rgba(255,255,255,0.2)', fontSize: '12px', marginLeft: '32px', flexShrink: 0 }}>{cert.year}</span>
+                <span className="cert-year" style={{ color: 'rgba(255,255,255,0.2)', fontSize: '12px', marginLeft: '32px', flexShrink: 0 }}>{cert.year}</span>
               </div>
             ))}
           </div>
