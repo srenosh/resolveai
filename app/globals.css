@@ -70,12 +70,15 @@ a {
 }
 
 @media (max-width: 768px) {
-  /* Nav — hide middle links on mobile, keep logo + contact */
+  /* Nav — compact, all links visible */
   .nav-inner {
-    padding: 16px 20px;
+    padding: 14px 16px;
+  }
+  .nav-links {
+    gap: 16px;
   }
   .nav-page-link {
-    display: none;
+    font-size: 13px !important;
   }
 
   /* Stats — 2x2 grid */
@@ -103,5 +106,12 @@ a {
   }
   .cert-row .cert-year {
     margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Very small screens — hide page links, keep just Contact CTA */
+  .nav-page-link {
+    display: none;
   }
 }
