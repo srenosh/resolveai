@@ -93,7 +93,7 @@ export default function Home() {
             Navy FITREP Evaluation Automation
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.35)', lineHeight: 1.75, fontSize: '16px', maxWidth: '600px', marginBottom: '32px' }}>
-            End-to-end intelligent document processing pipeline for U.S. Navy military evaluation packages — processing 400,000+ documents annually with 92% straight-through processing and zero document loss.
+            End-to-end intelligent document processing pipeline for U.S. Navy military evaluation packages, processing 400,000+ documents annually with 92% straight-through processing and zero document loss.
           </p>
           <a href="/projects" style={{ color: '#60a5fa', fontSize: '14px', fontWeight: 500, textDecoration: 'none' }}>
             View full case study →
@@ -132,7 +132,7 @@ export default function Home() {
             "UiPath Automation Developer Professional",
             "UiPath Business Analyst Professional",
             "SAP S/4HANA Certified",
-            "BS Information Technology — WGU 2026",
+            "BS Information Technology, WGU 2026",
           ].map((cert) => (
             <span key={cert} style={{
               padding: '8px 18px', borderRadius: '100px',

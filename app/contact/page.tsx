@@ -26,7 +26,7 @@ export default function Contact() {
             color: 'rgba(255,255,255,0.6)', textDecoration: 'none', width: '100%', maxWidth: '380px',
             letterSpacing: '-0.2px',
           }}>
-            LinkedIn — Renosh Sunny
+            LinkedIn: Renosh Sunny
           </a>
         </div>
       </div>

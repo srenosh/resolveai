@@ -23,7 +23,7 @@ export default function Projects() {
             Navy FITREP Military Evaluation Automation
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.4)', lineHeight: 1.75, marginBottom: '40px', fontSize: '16px', maxWidth: '780px' }}>
-            Architected and delivered an end-to-end intelligent document processing pipeline for U.S. Navy FITREP evaluation packages — automating intake, classification, extraction, validation, and structured routing of 400,000+ documents annually with zero document loss tolerance.
+            Architected and delivered an end-to-end intelligent document processing pipeline for U.S. Navy FITREP evaluation packages, automating intake, classification, extraction, validation, and structured routing of 400,000+ documents annually with zero document loss tolerance.
           </p>
 
           <div className="stats-grid" style={{ gap: '16px', marginBottom: '40px', padding: '32px 0', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
@@ -96,7 +96,7 @@ export default function Projects() {
             ))}
           </div>
           <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 600, letterSpacing: '-0.5px', marginBottom: '16px' }}>
-            Defense Logistics Agency — SAP Automated Testing
+            Defense Logistics Agency: SAP Automated Testing
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.4)', lineHeight: 1.75, fontSize: '16px', maxWidth: '780px' }}>
             Delivered 150+ SAP EWM/TM automated test scripts for DLA within 3 months as part of the agency&apos;s automated testing initiative. Conducted business analysis to identify automation opportunities across the professional services business unit.
