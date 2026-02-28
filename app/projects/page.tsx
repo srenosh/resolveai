@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] pt-32 pb-24 px-6">
+    <main className="min-h-screen bg-[#0a0a0a] pb-24 px-6" style={{ paddingTop: "140px" }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
         <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '12px' }}>Work</p>
         <h1 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 600, letterSpacing: '-1px', marginBottom: '64px' }}>Projects</h1>
