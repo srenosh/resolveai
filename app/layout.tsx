@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,20 +22,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           borderBottom: '1px solid rgba(255,255,255,0.06)',
         }}>
           <div className="nav-inner">
-            <a href="/" style={{ fontSize: '17px', fontWeight: 600, letterSpacing: '-0.3px', color: 'white', textDecoration: 'none' }}>
+            <Link href="/" style={{ fontSize: '17px', fontWeight: 600, letterSpacing: '-0.3px', color: 'white', textDecoration: 'none' }}>
               ResolveAI
-            </a>
+            </Link>
             <div className="nav-links">
               {[
                 { label: 'Home', href: '/' },
                 { label: 'Projects', href: '/projects' },
                 { label: 'About', href: '/about' },
               ].map(link => (
-                <a key={link.href} href={link.href} className="nav-page-link" style={{ fontSize: '14px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>
+                <Link key={link.href} href={link.href} className="nav-page-link" style={{ fontSize: '14px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a href="/contact" style={{
+              <Link href="/contact" style={{
                 fontSize: '14px',
                 color: 'rgba(255,255,255,0.7)',
                 textDecoration: 'none',
@@ -43,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 borderRadius: '100px',
               }}>
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
