@@ -6,7 +6,7 @@ export default function Projects() {
         <h1 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 600, letterSpacing: '-1px', marginBottom: '64px' }}>Projects</h1>
 
 
-        {/* Navy Project */
+        {/* Navy Project */}
         <div style={{
           marginBottom: '48px',
           padding: 'clamp(32px, 4vw, 56px)',
